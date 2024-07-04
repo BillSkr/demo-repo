@@ -1,70 +1,57 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #080808;
     color: #fff;
 }
 
-
-.container{
+.container {
     padding: 10px 10%;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Align items to the right */
     flex-wrap: wrap;
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
+    display: flex; /* Make ul a flex container */
+    align-items: center; /* Center items vertically */
 }
-nav ul li{
-    display: inline-block;
+
+nav ul li {
     list-style: none;
     margin: 10px 20px;
 }
 
-
-nav ul li a{
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
     background: #ff004f;
     position: absolute;
-    left:0;
+    left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     width: 100%;
 }
-
-.header-text{
-    margin-top: 30px;
-    font-size: 20px;
-}
-
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-}
-
 
 .header-content {
     display: flex; /* Use flexbox to align text and image */
@@ -72,9 +59,19 @@ nav ul li a:hover::after{
     margin-top: 20%; /* Adjust as needed */
 }
 
-header-image img {
+.header-text {
+    font-size: 30px;
+    margin-right: 20px; /* Space between text and image */
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-image img {
     max-width: 100%; /* Ensure image is responsive */
     height: auto; /* Maintain aspect ratio */
     max-height: 300px; /* Set a max height if needed */
-    object-fit: contain;
+    object-fit: contain; /* Ensure the image fits within its container */
 }
