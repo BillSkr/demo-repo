@@ -10,14 +10,6 @@ body{
     color: #fff;
 }
 
-#header{
-    width: 100px;
-    height:10vh;
-    background-image: url(image.png);
-    background-size: cover;
-    background-position: center;
-}
-
 
 .container{
     padding: 10px 10%;
