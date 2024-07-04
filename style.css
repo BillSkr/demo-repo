@@ -57,6 +57,7 @@ nav ul li a:hover::after {
     display: flex; /* Use flexbox to align text and image */
     align-items: center; /* Center items vertically */
     margin-top: 20%; /* Adjust as needed */
+    justify-content: flex-end;
 }
 
 .header-text {
