@@ -16,7 +16,7 @@ body{
 
 nav{
     display: flex;
-    align-items: right;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
