@@ -18,10 +18,14 @@ body{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
 
+nav ul {
+    display: flex;
+    align-items: center;
+}
 nav ul li{
     display: inline-block;
     list-style: none;
