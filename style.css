@@ -46,4 +46,6 @@ nav ul li a::after{
     bottom: -6px;
 }
 
-
+nav ul li a:hover::after{
+    width: 100%;
+}
