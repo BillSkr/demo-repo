@@ -76,5 +76,55 @@ body{
     color: var(--main-color);   
 }
 
+section{
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+
+.home{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 15rem;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline ;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.logo span{
+    color: var(--main-color);
+}
+
+.home-content h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+}
+
+.home-content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+}
+
 
 
