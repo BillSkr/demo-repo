@@ -38,3 +38,9 @@ nav ul li a{
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 800px) {
+    .flex-container{
+        flex-direction: column;
+    }
+}
