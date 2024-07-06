@@ -33,14 +33,6 @@ nav ul li a{
     font-size: 18px;
 }
 
-
-.flex-container{
-    display: flex;
-    flex-direction: column;
-}
-
-@media (max-width: 800px) {
-    .flex-container{
-        flex-direction: column;
-    }
+.grid-container{
+    display: grid;
 }
