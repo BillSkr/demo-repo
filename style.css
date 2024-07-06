@@ -1,37 +1,38 @@
-* {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+    background-color: #f4f4f9;
 }
-
-body {
-    background: #080800;
-    color: #fff;
-}
-
-.container {
-    padding: 10px 10%;
-}
-
-nav {
+.navbar {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
 }
-
-nav ul {
-    display: flex;
-}
-
-nav li {
-    list-style: none;
-    margin: 10px 20px;
-}
-
-nav ul li a {
-    color: #fff;
+.navbar a {
+    color: white;
     text-decoration: none;
-    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: 0.3s ;
+}
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+}
+.navbar .menu {
+    display: flex;
+    gap: 10px;
 }
