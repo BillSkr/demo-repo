@@ -36,4 +36,5 @@ nav ul li a{
 
 .flex-container{
     display: flex;
+    flex-direction: column;
 }
