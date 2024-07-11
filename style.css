@@ -9,13 +9,12 @@ body {
     position: fixed;
     right: 0;
     bottom: 0;
-    max-width: 0;
-    min-width: 0;
+    max-width: 100%;
+    min-width: 100%;
 }
 .navbar {
     display: flex;
     align-items: center;
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
     padding: 10px 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
