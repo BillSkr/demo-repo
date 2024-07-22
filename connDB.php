@@ -1,6 +1,6 @@
 <?php
 
-$servername = 'localhost';
+$servername = 'dns1.papaki.gr';
 $username = 'root';
 $password = '';
 $dbname = 'contact';
