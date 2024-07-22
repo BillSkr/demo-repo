@@ -1,11 +1,23 @@
 function myFunction() {
-    const inpobj = document.getElementById("Όνομα");
+    
+    let valid = true;
+    const form = document.getElementById("Όνομα");
     const message = document.getElementById("message");  
-    if (!inpobj.checkvalidity()) {
-        message.innerHTML = inpobj.validationMessage;
-    }else{
-        message.innerHTML = "Input Ok";
-    }    
+
+    inputs.forEach(input => {
+        if (!input.checkvalidity()) {
+            message.innerHTML = input.validationMessage;
+            valid = false;
+            return false;
+        }
+    });
+
+    if (valid) {
+        message.innerHTML = "Input OK";
+        form.submit();
+    }
+    
+   
 
     
 
