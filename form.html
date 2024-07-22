@@ -3,11 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
-<form action="insert.php" method="post"></form>
+   
+ <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        text-align: center;
+        color: #0bd816;
+    }
+
+    h2:hover{
+        background-color: aquamarine;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        color: #555;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: #5cb85c;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #4cae4c;
+    }
+
+</style>   
+
+<h2>Επικοινωνία</h2>
+
+<div id ="message"></div>
+
+
+<form action="insert.php" method="post">
     <label for="Όνομα">Όνομα:</label>
     <input type="text" id="Όνομα" name="Όνομα" required><br><br>
     
@@ -15,10 +83,15 @@
     <input type="text" id="Επώνυμο" name="Επώνυμο" required><br><br>
 
     <label for="Email">Email:</label>
-    <input type="text" id="Email" name="Email" required><br><br>
+    <input type="email" id="Email" name="Email" required><br><br>
 
     <label for="Θέμα">Θέμα:</label>
     <input type="text" id="Θέμα" name="Θέμα" required><br><br>
 
+    <label for="Αφήστε το μήνυμά σας">Αφήστε το μήνυμά σας:</label>
+    <input type="text" id="Αφήστε το μήνυμά σας" name="Αφήστε το μήνυμά σας" required><br><br>
+
+    <button onclick="myFunction()">Καταχώρηση</button>
+</form>
 </body>
 </html>
