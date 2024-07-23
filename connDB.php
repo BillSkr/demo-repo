@@ -1,7 +1,7 @@
 <?php
 
 $servername = 'dns1.papaki.gr';
-$username = 'root';
+$username = 't182933skr';
 $password = '';
 $dbname = 'contact';
 
